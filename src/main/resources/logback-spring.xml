@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
+<!-- https://github.com/spring-projects/spring-boot/tree/master/spring-boot/src/main/resources/org/springframework/boot/logging/logback -->
+<configuration scan="true" scanPeriod="10 seconds">
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	
+	<!-- 控制台 -->
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS}  %-5level ${PID:- } ●●● [AlphaJ] [%thread] %logger{36} : %msg %n
+			</Pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+	</appender>
+	
+	<!-- 每日文件 -->
+	<appender name="dailyRollingFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File> ${LOG_PATH:-.}/ServerMethod.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_PATH:-.}ServerMethod.%d.%i</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 10 MB -->
+				<maxFileSize>500MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+		<encoder>
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS}  %-5level ${PID:- } ●●● [AlphaJ] [%thread] %logger{36} : %msg %n
+			</pattern>
+			<!-- <charset>UTF-8</charset> --> <!-- 此处设置字符集 -->
+		</encoder>
+	</appender>
+
+	<logger name="com.investoday.boot" level="INFO" additivity="false">
+		<appender-ref ref="dailyRollingFileAppender" />
+		<appender-ref ref="consoleAppender"/>
+	</logger>
+
+</configuration>

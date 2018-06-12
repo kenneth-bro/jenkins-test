@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>江苏银行 阿尔法智投月报</title>
+<meta name="renderer" content="webkit" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../../../common/css/font-awesome/css/font-awesome.css" />	
+<link rel="stylesheet" href="../../../common/css/weui/weui.css" />
+<link rel="stylesheet" href="../../../common/css/init.css" />
+<link rel="stylesheet" href="../../../css/report/asset/month.css" />
+</head>
+<body>
+	<div class="header">
+		<a class="back" href="javascript:;"><i class="fa fa-angle-left"></i></a>
+		<span class="header-text showName">Alpha.J月报</span>
+	</div>
+	
+	<div class="main-content">
+		<div class="content1">
+			<p>尊敬的客户，您好！</p>
+			<p>
+				自<span id="beginDate">-年-月-日</span>阿尔法智投上线以来，阿尔法<span id="combinationIndex"></span>号（风险等级为<span id="risk"><i class="spe-text2">/-/</i></span>,投资期限为<span id="trem"><i class="spe-text2">-</i>（-）</span>）组合假如初始投资金额为<span id="money"><i class="spe-text2">--</i></span>元，那么至今组合累计收益为：
+			</p>
+			<div class="content1-1">
+			    <div class="text-header">
+			        <div>您的组合累计收益</div>
+			    </div>				
+				<p class="own-text" id="profit">--<span>元</span></p>
+				<p class="red" id="profitRate">--%</p>	
+				<div class="line">
+					<span></span>
+					<i class="vs"></i>
+					<span></span>
+				</div>
+				<p class="cash" id="showProfitName">--</p>
+				<p class="other-text" id="showProfit">--<span>元</span></p>
+				<p class="red" id="showProfitRate">--%</p>
+				
+			</div>
+			<p class="vs-result" id="words1"></p>
+		</div>
+		
+		<div class="content2">
+			<div class="click click1">
+				<span data-mark="0">查看最新组合明细 <i class="fa fa-angle-down"></i></span>
+			</div>
+		</div>
+		
+		<div class="content3">
+				<div class="chart1">
+					<p><span class="showName"></span>最新建议组合明细</p>
+					<div class="pie-chart-area">
+						<div id="configAdviseChart"></div>
+						<!-- <p>配置比例</p> -->
+					</div>
+					<div class="chart1-table" id="configAdviseTable">
+						<div class="chart1-table-r">
+						    <div class="chart1-table-h">
+						    	<span class="chart1-table-t1">股票类</span>
+							    <span class="chart1-table-t2">占比<i class="red">48.72%</i></span>
+						    </div>
+							<div class="chart1-table-d">
+								<div>
+									<span class="chart1-table-d1">长信量化先锋（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+								<div>
+									<span class="chart1-table-d1">华安逆向策略（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="chart1-table-r">
+						    <div class="chart1-table-h">
+						    	<span class="chart1-table-t1 blue">另类</span> 
+						    	<span class="chart1-table-t2">占比<i class="red">48.72%</i></span>
+						    </div>
+							<div class="chart1-table-d">
+								<div>
+									<span class="chart1-table-d1">长信量化先锋（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+								<div>
+									<span class="chart1-table-d1">华安逆向策略（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="chart1-table-r">
+						    <div class="chart1-table-h">
+						    	<span class="chart1-table-t1 blue">黄金类</span> 
+							    <span class="chart1-table-t2">占比<i class="red">48.72%</i></span>
+						    </div>
+							<div class="chart1-table-d">
+								<div>
+									<span class="chart1-table-d1">长信量化先锋（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+								<div>
+									<span class="chart1-table-d1">华安逆向策略（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="chart1-table-r">
+						    <div class="chart1-table-h">
+						    	<span class="chart1-table-t1 blue">货币类</span> 
+								<span class="chart1-table-t2">占比<i class="red">48.72%</i></span>
+						    </div>
+							<div class="chart1-table-d">
+								<div>
+									<span class="chart1-table-d1">长信量化先锋（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+								<div>
+									<span class="chart1-table-d1">长信量化先锋（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+								<div>
+									<span class="chart1-table-d1">华安逆向策略（519983）</span> 
+									<span class="chart1-table-d2">24.36%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="content4">
+			<div class="content4-1">
+				<span class="zhsy">组合收益分析</span> <span class="zhsy-date" id="analysisDate">数据截止至：/-/-/</span>
+			</div>
+			<div class="content4-2">
+				<div class="content4-2-1">
+					<p id="profitMonth">--元<p>
+					<p>本月收益</p>
+				</div>
+				<div class="middle-line"></div>
+				<div class="content4-2-2">
+					<p class="red" id="profitRateMonth">--%<p>
+					<p>本月收益率</p>
+				</div>
+				<div class="middle-line"></div>
+				<div class="content4-2-3">
+					<p id="latestValue">--元<p>
+					<p>最新持仓市值</p>
+				</div>
+			</div>
+			<div class="content4-3">
+				<div class="click click2">
+					<span data-mark="0">查看收益率统计 <i class="fa fa-angle-down"></i></span>
+				</div>
+			</div>
+			<div class="content4-4" style="display: none;">
+				<table>
+					<thead>
+						<tr>
+							<td>统计区间</td>
+							<td>累计收益率</td>
+						</tr>
+					</thead>
+					<tbody>
+					    <tr></tr>
+						<tr>
+							<td>近一年</td>
+							<td id="rate1y">--%</td>
+						</tr>
+						<tr>
+							<td>近六月</td>
+							<td id="rate6m">--%</td>
+						</tr>
+						<tr>
+							<td>近三月</td>
+							<td id="rate3m">--%</td>
+						</tr>
+						<tr>
+							<td>近一月</td>
+							<td id="rate1m">--%</td>
+						</tr>
+						<tr></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content4-5">
+				<p id="words"></p>
+				<p>各资产收益分布如下：</p><p class="assetUnit">单位：元</p>
+				<div class="chart2">
+					<div id="assetCollatChart"></div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="content6">
+			<div class="content6-0">
+				<div class="spe-text3">
+					<span id="conclusionWords">"投资比的是耐心，风物长宜放眼量。"</span>
+				</div>
+			</div>
+			<div class="content6-3">
+				<div class="click3">
+					<span data-mark="0">了解阿尔法智投</span>
+				</div>
+			</div>
+			<div class="content6-1" style="display: none;">
+				<div class="content6-1-1" style="text-align: center;">
+					<span class="float-left"></span><span class="blue">阿尔法智投</span><span>一直在您的投资路上</span><span>保驾护航</span>
+				 </div>
+				 <div class="content6-1-2">
+					<p>阿尔法智投是江苏银行与今日投资共同打造的智能投顾系统。该系统依靠强大的大数据计算和成熟的量化投资模型，为用户提供专业化和个性化的财富管理方案。</p>
+				 </div>
+			</div>
+			
+			<div class="content6-5" style="display: none;">
+				<div class="share">
+					分享战绩
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../../common/js/jquery-3.2.1.min.js"></script>
+	<!-- hc b -->
+	<script src="../../../common/js/highchart/highcharts.js"></script>
+	<script src="../../../common/js/highchart/highcharts-more.js"></script>
+	<!-- hc e -->
+    <script type="text/javascript" src="../../../common/js/layer/layer.js"></script>
+    <script type="text/javascript" src="../../../common/js/AppUtil.js"></script>
+    <script type="text/javascript" src="../../../common/js/loading/loading.js"></script>
+    <script type="text/javascript" src="../../../js/report/public.js"></script>
+	<script type="text/javascript" src="../../../js/report/asset/month-jsb.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+            document.documentElement.style.height = document.documentElement.clientHeight + 'px';
+        });
+    </script>
+</body>
+</html>
